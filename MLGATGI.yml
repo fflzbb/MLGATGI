@@ -1,0 +1,24 @@
+name: MLGATGI
+channels:
+  - defaults
+
+dependencies:
+  - python=3.12.3
+  - pip=24.2
+  - numpy=1.26.4
+  - pandas=2.2.2
+  - scipy=1.13.1
+  - scikit-learn=1.5.1
+  - matplotlib=3.9.2
+  - seaborn=0.13.2
+  - h5py=3.11.0
+  - networkx=3.3
+  - tqdm=4.66.5
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch==2.6.0+cu126
+      - scikit-allel==1.3.13
+      - tensorboard==2.19.0
+      - thop==0.1.1-2209072238
+      - graphviz==0.20.3
+      - torchviz==0.0.3
